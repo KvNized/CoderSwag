@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		A583CAD0263C39FF00420FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583CACF263C39FF00420FAA /* AppDelegate.swift */; };
 		A583CAD2263C39FF00420FAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583CAD1263C39FF00420FAA /* SceneDelegate.swift */; };
-		A583CAD4263C39FF00420FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583CAD3263C39FF00420FAA /* ViewController.swift */; };
+		A583CAD4263C39FF00420FAA /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583CAD3263C39FF00420FAA /* CategoriesVC.swift */; };
 		A583CAD7263C39FF00420FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A583CAD5263C39FF00420FAA /* Main.storyboard */; };
 		A583CADA263C39FF00420FAA /* CoderSwag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A583CAD8263C39FF00420FAA /* CoderSwag.xcdatamodeld */; };
 		A583CADC263C3A0000420FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A583CADB263C3A0000420FAA /* Assets.xcassets */; };
 		A583CADF263C3A0000420FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A583CADD263C3A0000420FAA /* LaunchScreen.storyboard */; };
+		A5E6090B26401C770031EC48 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6090A26401C770031EC48 /* CategoryCell.swift */; };
+		A5E6090E264028190031EC48 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6090D264028190031EC48 /* Category.swift */; };
+		A5E6091126402BD10031EC48 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E6091026402BD10031EC48 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A583CACC263C39FF00420FAA /* CoderSwag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderSwag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A583CACF263C39FF00420FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A583CAD1263C39FF00420FAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A583CAD3263C39FF00420FAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A583CAD3263C39FF00420FAA /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		A583CAD6263C39FF00420FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A583CAD9263C39FF00420FAA /* CoderSwag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoderSwag.xcdatamodel; sourceTree = "<group>"; };
 		A583CADB263C3A0000420FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A583CADE263C3A0000420FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A583CAE0263C3A0000420FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E6090A26401C770031EC48 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		A5E6090D264028190031EC48 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A5E6091026402BD10031EC48 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,12 @@
 		A583CACE263C39FF00420FAA /* CoderSwag */ = {
 			isa = PBXGroup;
 			children = (
+				A5E6091326402BD60031EC48 /* Service */,
+				A5E608FF264017FE0031EC48 /* View */,
+				A5E608FE264017F60031EC48 /* Model */,
+				A5E608FD264017EE0031EC48 /* Controller */,
 				A583CACF263C39FF00420FAA /* AppDelegate.swift */,
 				A583CAD1263C39FF00420FAA /* SceneDelegate.swift */,
-				A583CAD3263C39FF00420FAA /* ViewController.swift */,
 				A583CAD5263C39FF00420FAA /* Main.storyboard */,
 				A583CADB263C3A0000420FAA /* Assets.xcassets */,
 				A583CADD263C3A0000420FAA /* LaunchScreen.storyboard */,
@@ -68,6 +77,38 @@
 				A583CAD8263C39FF00420FAA /* CoderSwag.xcdatamodeld */,
 			);
 			path = CoderSwag;
+			sourceTree = "<group>";
+		};
+		A5E608FD264017EE0031EC48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A583CAD3263C39FF00420FAA /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5E608FE264017F60031EC48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6090D264028190031EC48 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5E608FF264017FE0031EC48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6090A26401C770031EC48 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5E6091326402BD60031EC48 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6091026402BD10031EC48 /* DataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A583CAD4263C39FF00420FAA /* ViewController.swift in Sources */,
+				A583CAD4263C39FF00420FAA /* CategoriesVC.swift in Sources */,
+				A5E6091126402BD10031EC48 /* DataService.swift in Sources */,
 				A583CADA263C39FF00420FAA /* CoderSwag.xcdatamodeld in Sources */,
 				A583CAD0263C39FF00420FAA /* AppDelegate.swift in Sources */,
 				A583CAD2263C39FF00420FAA /* SceneDelegate.swift in Sources */,
+				A5E6090B26401C770031EC48 /* CategoryCell.swift in Sources */,
+				A5E6090E264028190031EC48 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
